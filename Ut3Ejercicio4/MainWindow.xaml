@@ -7,58 +7,106 @@
     xmlns:local="clr-namespace:Ut3Ejercicio4"
     mc:Ignorable="d"
     Title="Visor de imágenes"
-    Height="450"
-    Width="800">
+    MinHeight="575"
+    MinWidth="680"
+    Height="575"
+    Width="680"
+    Icon="ut3ej4.ico">
+    
     <DockPanel
         LastChildFill="True">
         <DockPanel
-            LastChildFill="True"
+            LastChildFill="False"
             DockPanel.Dock="Bottom"
             Background="LightBlue"
-            Height="50"
+            Height="40"
             Margin="10">
             <Label
                 FontSize="20"
+                FontFamily="Rubik"
                 Content="Nº de imágenes: 10"
                 DockPanel.Dock="Left" />
-            <Label
-                FontSize="20"
-                Content="Diseñado por David Ortiz"
-                DockPanel.Dock="Right" />
-            <Label />
+            <Label FontSize="20"
+                   FontFamily="Rubik"
+                   Content="Diseñado por David Ortiz"
+                   DockPanel.Dock="Right" />
         </DockPanel>
+        <Border
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="3"
+            DockPanel.Dock="Right"
+            Margin="5">
+            <DockPanel
+                LastChildFill="False"
+                Background="LightGreen">
+
+                <StackPanel
+                    Width="100"
+                    Margin="5"
+                    Orientation="Vertical"
+                    DockPanel.Dock="Top">
+                    <Button
+                        Content="Añadir imagen"
+                        VerticalAlignment="Top"
+                        Margin="3" />
+                    <Button
+                        Content="Eliminar imagen"
+                        VerticalAlignment="Top"
+                        Margin="3" />
+                    <Button
+                        Content="Eliminar todas"
+                        VerticalAlignment="Top"
+                        Margin="3" />
+                </StackPanel>
+                <StackPanel Width="100"
+                            Margin="5"
+                            Orientation="Vertical"
+                            DockPanel.Dock="Bottom">
+                    <Button Content="Rotar"
+                            VerticalAlignment="Bottom"
+                            Margin="3" />
+                    <Button Content="Recortar"
+                            VerticalAlignment="Bottom"
+                            Margin="3" />
+
+                </StackPanel>
+            </DockPanel>
+        </Border>
+           
+            <Label 
+                DockPanel.Dock="Top"
+                Content="Visor de imágenes"
+                FontFamily="Rubik"
+                FontSize="40"
+                HorizontalAlignment="Center" />
         
-            <StackPanel
-                DockPanel.Dock="Right"
-                Width="100"
-                Margin="10"
-                Orientation="Vertical"
-                >
-                <Button
-                    Content="Añadir imagen"
-                    VerticalAlignment="Top"
-                    Margin="5" />
-                <Button
-                    Content="Eliminar imagen"
-                    VerticalAlignment="Top"
-                    Margin="5" />
-                <Button
-                    Content="Eliminar todas"
-                    VerticalAlignment="Top"
-                    Margin="5" />
-            
-                <Button
-                    Content="Rotar"
-                    VerticalAlignment="Bottom"
-                    Margin="5" />
-                <Button
-                    Content="Recortar"
-                    VerticalAlignment="Bottom"
-                    Margin="5" />
-
-            </StackPanel>
-        <Label />
-
+        <WrapPanel>
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+            <Image
+                Source="episodioIV.jpg"
+                Height="200" />
+        </WrapPanel>
 
 
 
