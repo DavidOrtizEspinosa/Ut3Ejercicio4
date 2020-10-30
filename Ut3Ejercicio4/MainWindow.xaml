@@ -12,9 +12,40 @@
     Height="575"
     Width="680"
     Icon="ut3ej4.ico">
+    <Window.Resources>
+        <Style
+            TargetType="Label">
+            <Setter
+                Property="FontFamily"
+                Value="Rubik" />
+        </Style>
+        <Style
+            TargetType="StackPanel">
+            <Setter
+                Property="Width"
+                Value="100" />
+            <Setter
+                Property="Margin"
+                Value="5" />
+            <Setter
+                Property="Orientation"
+                Value="Vertical" />
+        </Style>
+        <Style
+            TargetType="Button">
+            <Setter
+                Property="Margin"
+                Value="3" />
+        </Style>
+        <Style
+            TargetType="Image">
+            <Setter
+                Property="Height"
+                Value="200" />
+        </Style>
+    </Window.Resources>
     
-    <DockPanel
-        LastChildFill="True">
+    <DockPanel>
         <DockPanel
             LastChildFill="False"
             DockPanel.Dock="Bottom"
@@ -23,11 +54,9 @@
             Margin="10">
             <Label
                 FontSize="20"
-                FontFamily="Rubik"
                 Content="Nº de imágenes: 10"
                 DockPanel.Dock="Left" />
             <Label FontSize="20"
-                   FontFamily="Rubik"
                    Content="Diseñado por David Ortiz"
                    DockPanel.Dock="Right" />
         </DockPanel>
@@ -42,33 +71,23 @@
                 Background="LightGreen">
 
                 <StackPanel
-                    Width="100"
-                    Margin="5"
-                    Orientation="Vertical"
                     DockPanel.Dock="Top">
                     <Button
                         Content="Añadir imagen"
-                        VerticalAlignment="Top"
-                        Margin="3" />
+                        VerticalAlignment="Top" />
                     <Button
                         Content="Eliminar imagen"
-                        VerticalAlignment="Top"
-                        Margin="3" />
+                        VerticalAlignment="Top"/>
                     <Button
                         Content="Eliminar todas"
-                        VerticalAlignment="Top"
-                        Margin="3" />
+                        VerticalAlignment="Top" />
                 </StackPanel>
-                <StackPanel Width="100"
-                            Margin="5"
-                            Orientation="Vertical"
+                <StackPanel 
                             DockPanel.Dock="Bottom">
                     <Button Content="Rotar"
-                            VerticalAlignment="Bottom"
-                            Margin="3" />
+                            VerticalAlignment="Bottom" />
                     <Button Content="Recortar"
-                            VerticalAlignment="Bottom"
-                            Margin="3" />
+                            VerticalAlignment="Bottom" />
 
                 </StackPanel>
             </DockPanel>
@@ -77,35 +96,26 @@
             <Label 
                 DockPanel.Dock="Top"
                 Content="Visor de imágenes"
-                FontFamily="Rubik"
                 FontSize="40"
                 HorizontalAlignment="Center" />
         
         <WrapPanel>
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg"/>
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg"/>
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg"/>
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg" />
             <Image
-                Source="episodioIV.jpg"
-                Height="200" />
+                Source="episodioIV.jpg" />
         </WrapPanel>
 
 
