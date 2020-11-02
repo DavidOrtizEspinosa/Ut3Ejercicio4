@@ -19,6 +19,11 @@
                 Property="FontFamily"
                 Value="Rubik" />
         </Style>
+        <Style TargetType="Label" x:Key="labelStyle" 
+               BasedOn="{StaticResource {x:Type Label}}">
+            <Setter Property="FontSize"
+                    Value="20" />
+        </Style>
         <Style
             TargetType="StackPanel">
             <Setter
@@ -42,6 +47,8 @@
             <Setter
                 Property="Height"
                 Value="200" />
+            <Setter Property="Source"
+                    Value="episodioIV.jpg" />
         </Style>
     </Window.Resources>
     
@@ -52,11 +59,10 @@
             Background="LightBlue"
             Height="40"
             Margin="10">
-            <Label
-                FontSize="20"
+            <Label Style="{StaticResource labelStyle}"
                 Content="Nº de imágenes: 10"
                 DockPanel.Dock="Left" />
-            <Label FontSize="20"
+            <Label Style="{StaticResource labelStyle}"
                    Content="Diseñado por David Ortiz"
                    DockPanel.Dock="Right" />
         </DockPanel>
@@ -100,22 +106,14 @@
                 HorizontalAlignment="Center" />
         
         <WrapPanel>
-            <Image
-                Source="episodioIV.jpg"/>
-            <Image
-                Source="episodioIV.jpg" />
-            <Image
-                Source="episodioIV.jpg" />
-            <Image
-                Source="episodioIV.jpg"/>
-            <Image
-                Source="episodioIV.jpg" />
-            <Image
-                Source="episodioIV.jpg"/>
-            <Image
-                Source="episodioIV.jpg" />
-            <Image
-                Source="episodioIV.jpg" />
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
+            <Image/>
         </WrapPanel>
 
 
